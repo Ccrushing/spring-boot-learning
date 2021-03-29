@@ -1,5 +1,6 @@
 package top.crush.boot.batis.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -30,10 +31,18 @@ public class Clazz {
     /**
      * 班级管理老师的Id
      */
+    @JsonIgnore
     private Integer teacherId;
+
+    /**
+     * 管理班级的教师对象（一对一）
+     */
+
+    private Teacher teacher;
 
     /**
      * 一方里声明多方的集合
      */
+
     private List<Student> students;
 }

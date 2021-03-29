@@ -67,7 +67,9 @@
                 <TableGenerateConfig>
                   <option name="generatedKey" value="course_id" />
                   <option name="javaModelName" value="Course" />
-                  <option name="moduleName" value="spring-boot-config" />
+                  <option name="moduleName" value="spring-boot-batis" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>

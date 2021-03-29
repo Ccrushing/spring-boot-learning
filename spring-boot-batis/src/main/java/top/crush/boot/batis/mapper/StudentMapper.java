@@ -1,9 +1,6 @@
 package top.crush.boot.batis.mapper;
 
-import org.apache.ibatis.annotations.Param;
 import top.crush.boot.batis.domain.Student;
-
-import java.util.List;
 
 public interface StudentMapper {
 
@@ -13,7 +10,7 @@ public interface StudentMapper {
      * @param studentId 学生id
      * @return student对象
      */
-    Student getStudentManyToOne(int studentId);
+//    Student getStudentManyToOne(int studentId);
 
     /**
      * 新增学生
@@ -21,7 +18,7 @@ public interface StudentMapper {
      * @param student student对象
      * @return int
      */
-    int insert(Student student);
+//    int insert(Student student);
 
     /**
      * 根据id删除学生
@@ -29,7 +26,7 @@ public interface StudentMapper {
      * @param studentId 学生id
      * @return int
      */
-    int deleteByPrimaryKey(Integer studentId);
+//    int deleteByPrimaryKey(Integer studentId);
 
     /**
      * 根据id查询学生
@@ -37,7 +34,7 @@ public interface StudentMapper {
      * @param studentId 学生id
      * @return 查询到的学生对象
      */
-    Student selectByPrimaryKey(Integer studentId);
+//    Student selectByPrimaryKey(Integer studentId);
 
 
     /**
@@ -46,7 +43,7 @@ public interface StudentMapper {
      * @param student student对象
      * @return int
      */
-    int updateByPrimaryKeySelective(Student student);
+//    int updateByPrimaryKeySelective(Student student);
 
     /**
      * 批量新增学生
@@ -54,7 +51,7 @@ public interface StudentMapper {
      * @param students 学生集合
      * @return int
      */
-    int batchInsert(@Param("students") List<Student> students);
+//    int batchInsert(@Param("students") List<Student> students);
 
     /**
      * 批量删除
@@ -62,7 +59,7 @@ public interface StudentMapper {
      * @param idList 待删记录id集合
      * @return int
      */
-    int batchDelete(@Param("idList") List<Integer> idList);
+//    int batchDelete(@Param("idList") List<Integer> idList);
 
     /**
      * 批量修改
@@ -70,7 +67,7 @@ public interface StudentMapper {
      * @param students 学生集合
      * @return int
      */
-    int batchUpdate(@Param("students") List<Student> students);
+//    int batchUpdate(@Param("students") List<Student> students);
 
     /**
      * 按条件单表查询，结合动态SQL
@@ -78,6 +75,14 @@ public interface StudentMapper {
      * @param student 参数对象
      * @return List<Student>
      */
-    List<Student> selectByDynamicSql(Student student);
+//    List<Student> selectByDynamicSql(Student student);
+
+    /**
+     * 根据学生id查询（关联查询出所属班级信息，所选课程信息）
+     *
+     * @param studentId 学生id
+     * @return student对象
+     */
+    Student getStudent(int studentId);
 
 }
