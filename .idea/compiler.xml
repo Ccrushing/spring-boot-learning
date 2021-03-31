@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-web" />
         <module name="spring-boot-config" />
+        <module name="springboot-mbp" />
         <module name="spring-boot-batis" />
-        <module name="spring-boot-learning" />
         <module name="spring-boot-quickstart" />
       </profile>
     </annotationProcessing>
@@ -20,6 +20,7 @@
       <module name="spring-boot-config" options="-parameters" />
       <module name="spring-boot-quickstart" options="-parameters" />
       <module name="spring-boot-web" options="-parameters" />
+      <module name="springboot-mbp" options="-parameters" />
     </option>
   </component>
 </project>

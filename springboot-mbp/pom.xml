@@ -8,12 +8,20 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-boot-quickstart</artifactId>
+    <artifactId>springboot-mbp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>spring-boot-quickstart</name>
-    <description>quickstart project for Spring Boot</description>
+    <name>springboot-mbp</name>
+    <description>Mybatis Plus模块</description>
+
     <dependencies>
+
+        <!--mybatis plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.2</version>
+        </dependency>
 
     </dependencies>
 
