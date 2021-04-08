@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.crush.boot.batis.mapper.CoursesMapper">
+  <resultMap id="BaseResultMap" type="top.crush.boot.batis.domain.Courses">
+    <!--@mbg.generated-->
+    <!--@Table t_courses-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="cover" jdbcType="VARCHAR" property="cover" />
+  </resultMap>
+
+
+
+  <select id="findAll" resultMap="BaseResultMap">
+    SELECT *
+    FROM t_courses
+  </select>
+  <!--  <sql id="Base_Column_List">-->
+<!--    &lt;!&ndash;@mbg.generated&ndash;&gt;-->
+<!--    id, `name`, description, cover-->
+<!--  </sql>-->
+<!--  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+<!--    &lt;!&ndash;@mbg.generated&ndash;&gt;-->
+<!--    select -->
+<!--    <include refid="Base_Column_List" />-->
+<!--    from t_courses-->
+<!--    where id = #{id,jdbcType=INTEGER}-->
+<!--  </select>-->
+<!--  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+<!--    &lt;!&ndash;@mbg.generated&ndash;&gt;-->
+<!--    delete from t_courses-->
+<!--    where id = #{id,jdbcType=INTEGER}-->
+<!--  </delete>-->
+<!--  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="top.crush.boot.batis.domain.Courses" useGeneratedKeys="true">-->
+<!--    &lt;!&ndash;@mbg.generated&ndash;&gt;-->
+<!--    insert into t_courses (`name`, description, cover-->
+<!--      )-->
+<!--    values (#{name,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, #{cover,jdbcType=VARCHAR}-->
+<!--      )-->
+<!--  </insert>-->
+<!--  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="top.crush.boot.batis.domain.Courses" useGeneratedKeys="true">-->
+<!--    &lt;!&ndash;@mbg.generated&ndash;&gt;-->
+<!--    insert into t_courses-->
+<!--    <trim prefix="(" suffix=")" suffixOverrides=",">-->
+<!--      <if test="name != null">-->
+<!--        `name`,-->
+<!--      </if>-->
+<!--      <if test="description != null">-->
+<!--        description,-->
+<!--      </if>-->
+<!--      <if test="cover != null">-->
+<!--        cover,-->
+<!--      </if>-->
+<!--    </trim>-->
+<!--    <trim prefix="values (" suffix=")" suffixOverrides=",">-->
+<!--      <if test="name != null">-->
+<!--        #{name,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="description != null">-->
+<!--        #{description,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="cover != null">-->
+<!--        #{cover,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--    </trim>-->
+<!--  </insert>-->
+<!--  <update id="updateByPrimaryKeySelective" parameterType="top.crush.boot.batis.domain.Courses">-->
+<!--    &lt;!&ndash;@mbg.generated&ndash;&gt;-->
+<!--    update t_courses-->
+<!--    <set>-->
+<!--      <if test="name != null">-->
+<!--        `name` = #{name,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="description != null">-->
+<!--        description = #{description,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="cover != null">-->
+<!--        cover = #{cover,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--    </set>-->
+<!--    where id = #{id,jdbcType=INTEGER}-->
+<!--  </update>-->
+<!--  <update id="updateByPrimaryKey" parameterType="top.crush.boot.batis.domain.Courses">-->
+<!--    &lt;!&ndash;@mbg.generated&ndash;&gt;-->
+<!--    update t_courses-->
+<!--    set `name` = #{name,jdbcType=VARCHAR},-->
+<!--      description = #{description,jdbcType=VARCHAR},-->
+<!--      cover = #{cover,jdbcType=VARCHAR}-->
+<!--    where id = #{id,jdbcType=INTEGER}-->
+<!--  </update>-->
+</mapper>

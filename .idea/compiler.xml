@@ -6,19 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-web" />
         <module name="spring-boot-config" />
+        <module name="spring-boot-jpa" />
         <module name="springboot-mbp" />
+        <module name="spring-boot-exception" />
+        <module name="spring-boot-servlet" />
         <module name="spring-boot-batis" />
+        <module name="spring-boot-aop" />
+        <module name="spring-boot-web" />
         <module name="spring-boot-quickstart" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-spring" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-aop" options="-parameters" />
       <module name="spring-boot-batis" options="-parameters" />
       <module name="spring-boot-config" options="-parameters" />
+      <module name="spring-boot-exception" options="-parameters" />
+      <module name="spring-boot-jpa" options="-parameters" />
       <module name="spring-boot-quickstart" options="-parameters" />
+      <module name="spring-boot-servlet" options="-parameters" />
+      <module name="spring-boot-spring" options="-parameters" />
       <module name="spring-boot-web" options="-parameters" />
       <module name="springboot-mbp" options="-parameters" />
     </option>

@@ -26,8 +26,6 @@
                   <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-batis/src/main/java" />
                   <option name="javaModelPacakge" value="top.crush.boot.batis.domain" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-batis/src/main/java" />
-                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/spring-boot-batis/src/main/java" />
-                  <option name="javaServicePath" value="$PROJECT_DIR$/spring-boot-batis/src/main/java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="$PROJECT_DIR$/spring-boot-batis/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
@@ -82,6 +80,18 @@
                   <option name="generatedKey" value="id" />
                   <option name="javaModelName" value="CourseStudent" />
                   <option name="moduleName" value="spring-boot-config" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_soft1921:t_courses">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="Courses" />
+                  <option name="moduleName" value="spring-boot-batis" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>

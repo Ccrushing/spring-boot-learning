@@ -13,3 +13,11 @@ mybatis:
   configuration:
     # mybatis开启驼峰式命名
     map-underscore-to-camel-case: true  # mybatis开启驼峰式命名
+#pagehelper分页插件配置
+pagehelper:
+  helper-dialect:mysql
+  reasonable:true
+  support-methods-arguments:true
+  params:count=countSql
+  row-bounds-with-count:true
+  page-size-zero:true
